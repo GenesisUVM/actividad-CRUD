@@ -11,7 +11,8 @@ function Ventas() {
           <p>Descripcion</p>
           <p>Cantidad</p>
           <p>Precio</p>
-          <button>Comprar</button>
+          <button>Editar</button>
+          <button>Eliminar</button>
         </div>
       </section>
     </div>

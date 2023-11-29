@@ -10,8 +10,8 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='./ventas' element={<Ventas />} />
-          <Route path='./compras' element={<Compras />} />
+          <Route path='/ventas' element={<Ventas />} />
+          <Route path='/compras' element={<Compras />} />
         </Routes>
       </BrowserRouter>
       
