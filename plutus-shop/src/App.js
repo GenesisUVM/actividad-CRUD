@@ -13,7 +13,14 @@ function App() {
       </header>
       <section>
         <h3>Compras</h3>
-
+        <div>
+          <img alt="Imagen del producto" />
+          <h4>Nombre</h4>
+          <p>Descripcion</p>
+          <p>Cantidad</p>
+          <p>Precio</p>
+          <button>Comprar</button>
+        </div>
       </section>
     </div>
   );

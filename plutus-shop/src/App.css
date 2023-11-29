@@ -1,6 +1,7 @@
 body{
   background: #E6F5F3;
 }
+/*Estilos del header*/
 header{
   background: #1F2232;
   width: 100%;
@@ -32,10 +33,12 @@ header nav{
   font-size: 1.5rem;
   padding: 1rem 3rem;
  }
+ /*pseudo clase para los enlaces del header*/
  header a:hover{
   color: #64C9B8;
   font-size: 1.8rem;
  }
+ /*estilos del section*/
  section{
   width: 60%;
   margin: auto;
