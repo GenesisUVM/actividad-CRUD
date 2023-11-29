@@ -1,0 +1,41 @@
+body{
+  background: #E6F5F3;
+}
+header{
+  background: #1F2232;
+  width: 100%;
+   
+  color: #C7EAE4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2{
+  position: fixed;
+  font-size: 1.8rem;
+  left: 1rem;
+  font-weight: 500;
+
+}
+header nav{
+  display: flex;
+  right: 2rem;
+}
+ header a{
+  color: #C7EAE4;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+ }
+ header a:hover{
+  color: #64C9B8;
+  font-size: 1.8rem;
+ }
+ section{
+  width: 60%;
+  margin: auto;
+ }
+ h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+ }
