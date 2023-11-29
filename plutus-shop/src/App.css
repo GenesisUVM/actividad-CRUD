@@ -10,10 +10,15 @@ header{
   justify-content: space-between;
   align-items: center;
 }
+img{
+  width: 2rem;
+  margin: 1rem;
+  
+}
 h2{
   position: fixed;
   font-size: 1.8rem;
-  left: 1rem;
+  left: 4rem;
   font-weight: 500;
 
 }
