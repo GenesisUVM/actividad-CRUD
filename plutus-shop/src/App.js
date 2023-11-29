@@ -1,27 +1,20 @@
 import './App.css'
+import Compras from './componentes/compras';
+import Ventas from './componentes/ventas';
+import NavBar from './componentes/nav-bar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <img src="https://images.vexels.com/media/users/3/200097/isolated/preview/942820836246f08c2d6be20a45a84139-icono-de-carrito-de-compras-carrito-de-compras-by-vexels.png" alt="logo" />
-        <h2>Plutus Shop</h2>
-        <nav>
-          <a href="#">Compras</a>
-          <a href="" >Ventas</a>
-        </nav>
-      </header>
-      <section>
-        <h3>Compras</h3>
-        <div>
-          <img alt="Imagen del producto" />
-          <h4>Nombre</h4>
-          <p>Descripcion</p>
-          <p>Cantidad</p>
-          <p>Precio</p>
-          <button>Comprar</button>
-        </div>
-      </section>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='./ventas' element={<Ventas />} />
+          <Route path='./compras' element={<Compras />} />
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }
