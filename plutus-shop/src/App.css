@@ -47,3 +47,66 @@ header nav{
   font-size: 1.8rem;
   font-weight: 500;
  }
+
+ /*estilo para la seccion de compras en texto, imagen, parrafos y botones*/
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.compras {
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.compras-container {
+  list-style-type: none;
+  width: 100%;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.compras img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.compras h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+}
+
+.compras p {
+  font-size: 16px;
+  color: #666;
+  padding: 10px;
+}
+
+.compras button {
+  font-size: 16px;
+  background-color: #949494;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+.compras button:hover {
+  background-color: #0069d9;
+}
+
+.compras button:active {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+

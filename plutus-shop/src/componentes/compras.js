@@ -1,12 +1,10 @@
-
-
 function Compras() {
   return (
-    <div className="compras">
-     <section>
+    <div className="container">
+      <section className="compras">
         <h3>Compras</h3>
-        <div>
-          <img alt="Imagen del producto" />
+        <div className="compras-container">
+          <img alt="Imagen del producto"/>
           <h4>Nombre</h4>
           <p>Descripcion</p>
           <p>Cantidad</p>
@@ -15,6 +13,7 @@ function Compras() {
         </div>
       </section>
     </div>
+    
   );
 }
 
