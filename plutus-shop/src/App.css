@@ -5,7 +5,7 @@ body{
 header{
   background: #1F2232;
   width: 100%;
-   
+  position: fixed;
   color: #C7EAE4;
   display: flex;
   justify-content: space-between;
@@ -40,8 +40,8 @@ header nav{
  }
  /*estilos del section*/
  section{
-  width: 60%;
-  margin: auto;
+ 
+margin: auto;
  }
  h3{
   font-size: 1.8rem;
@@ -54,42 +54,43 @@ header nav{
   flex-direction: row-reverse;
 }
 
-.compras {
-  width: 50%;
-  padding: 20px;
+.compras, .ventas {
+  width: 80%;
+  padding: 3rem;
   border-radius: 10px;
 }
 
-.compras-container {
+.compras-container, .ventas-container{
   list-style-type: none;
   width: 100%;
   flex-grow: 1;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 1rem;
+  margin: 2rem 0;
 }
 
-.compras img {
+.img-producto {
   width: 100%;
   height: auto;
   padding: 10px;
 }
 
-.compras h4 {
+h4 {
   font-size: 18px;
   font-weight: bold;
   color: #333;
   padding: 10px;
 }
 
-.compras p {
+ p {
   font-size: 16px;
   color: #666;
   padding: 10px;
 }
 
-.compras button {
+ button {
   font-size: 16px;
   background-color: #949494;
   color: #fff;
@@ -97,75 +98,15 @@ header nav{
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
-  float: right;
+  right: 3rem;
+  margin: 0;
 }
 
-.compras button:hover {
+ button:hover {
   background-color: #0069d9;
 }
 
-.compras button:active {
-  background-color: #0069d9;
-  color: #fff;
-}
-
-/* Estilos para la sección de compras y ventas en texto, imagen, párrafos y botones */
-.ventas {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.ventas section {
-  width: 50%;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.ventas div {
-  list-style-type: none;
-  width: 100%;
-  flex-grow: 1;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
-.ventas img {
-  width: 100%;
-  height: auto;
-  padding: 10px;
-}
-
-.ventas h4 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  padding: 10px;
-}
-
-.ventas p {
-  font-size: 16px;
-  color: #666;
-  padding: 10px;
-}
-
-.ventas button {
-  font-size: 16px;
-  background-color: #949494;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  float: right;
-}
-
-.ventas button:hover {
-  background-color: #0069d9;
-}
-
-.ventas button:active {
+ button:active {
   background-color: #0069d9;
   color: #fff;
 }
