@@ -9,3 +9,6 @@ Características Principales
 
 Las tecnologias a utilizar fueron 
 REACT / JS / HTML5
+
+Diseño en Figma:
+https://www.figma.com/file/nXxA5c54UcRchnXDw4ctEb/Untitled?type=design&node-id=0%3A1&mode=design&t=8RD1hCZGI0PjITVA-1
