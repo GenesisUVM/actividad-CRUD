@@ -111,35 +111,29 @@ h4 {
   color: #fff;
 }
 
-/* Media Query para tablets */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  h2 {
+
+  header{
+    justify-content: flex-end;
     position: relative;
-    left: auto;
   }
-  header nav {
-    margin-top: 1rem;
-    right: 0;
+
+  header a{
+      padding: 10px 20px;
+      font-size: 1.5vh;
   }
+
+  header img{
+    position: absolute;
+    top: 0; 
+    left: 0;
+  }
+
+  header h2 h3{
+    float: right; /* Posiciona el elemento a la derecha */
+
+  }
+  
+
 }
 
-/* Media Query para teléfonos */
-@media (max-width: 576px) {
-  section {
-    width: 90%;
-  }
-  .container,
-  .ventas {
-    flex-direction: column;
-  }
-  .compras,
-  .ventas section {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-}
