@@ -1,46 +1,5 @@
 
-function Ventas() {
-  
-  return (
-    <div className="container">
-      <section className="ventas">
-        <h3>Ventas</h3>
-        <div className="ventas-container">
-          <img className="img-producto" alt="Imagen del producto" />
-          <h4>Nombre</h4>
-          <p>Descripcion</p>
-          <p>Cantidad</p>
-          <p>Precio</p>
-          <button id="btn-abrir-modal2" >Editar</button>
-          <button>Eliminar</button>
-        </div>
-        <button  id="btn-abrir-modal1">Agregar Producto</button>
-     
-      </section>
-      <section className="modals">
-        <dialog id="modal1">
-          <form className="form" method="dialog" id="form-agregar">
-            <label >Nombre<input type='text' id='name' name='name' required /></label>
-            <label >Descripcion<input type='text' id='descripcio' name='descripcion' required /></label>
-            <label >Cantidad<input type='number' id='cantidad' name='cantidad' required /></label>
-            <label >Precio<input type='number' id='precio' name='precio' required /></label>
-            <button id="btn-cerrar-modal1" class="boton3">Cerrar</button>
-          </form>
-        </dialog>
-        <dialog id="modal2">
-          <form className="form" method="dialog" id="form-actualizar">
-            <label >Nombre<input type='text' id='name' name='name' required /></label>
-            <label >Descripcion<input type='text' id='descripcio' name='descripcion' required /></label>
-            <label >Cantidad<input type='number' id='cantidad' name='cantidad' required /></label>
-            <label >Precio<input type='number' id='precio' name='precio' required /></label>
-            <button id="btn-cerrar-modal2" class="boton3">Cerrar</button>
-          </form>
-        </dialog>
-      </section>
-    </div>
-  );
-
-  const modal1 = document.querySelector("#modal1");
+const modal1 = document.querySelector("#modal1");
 const btnAbrirModal1 = document.querySelector("#btn-abrir-modal1");
 const btnCerrarModal1 = document.querySelector("#btn-cerrar-modal1");
 
@@ -89,6 +48,48 @@ formActualizar.addEventListener("submit", (e) => {
   datos = {nombre, descripcion,cantidad, precio};
   console.log(datos);
 });
+function Ventas() {
+  
+  return (
+    <div className="container">
+      <section className="ventas">
+        <h3>Ventas</h3>
+        <div className="ventas-container">
+          <img className="img-producto" alt="Imagen del producto" />
+          <h4>Nombre</h4>
+          <p>Descripcion</p>
+          <p>Cantidad</p>
+          <p>Precio</p>
+          <button id="btn-abrir-modal2" >Editar</button>
+          <button>Eliminar</button>
+        </div>
+        <button  id="btn-abrir-modal1">Agregar Producto</button>
+     
+      </section>
+      <section className="modals">
+        <dialog id="modal1">
+          <form className="form" method="dialog" id="form-agregar">
+            <label >Nombre<input type='text' id='name' name='name' required /></label>
+            <label >Descripcion<input type='text' id='descripcio' name='descripcion' required /></label>
+            <label >Cantidad<input type='number' id='cantidad' name='cantidad' required /></label>
+            <label >Precio<input type='number' id='precio' name='precio' required /></label>
+            <button id="btn-cerrar-modal1" class="boton3">Cerrar</button>
+          </form>
+        </dialog>
+        <dialog id="modal2">
+          <form className="form" method="dialog" id="form-actualizar">
+            <label >Nombre<input type='text' id='name' name='name' required /></label>
+            <label >Descripcion<input type='text' id='descripcio' name='descripcion' required /></label>
+            <label >Cantidad<input type='number' id='cantidad' name='cantidad' required /></label>
+            <label >Precio<input type='number' id='precio' name='precio' required /></label>
+            <button id="btn-cerrar-modal2" class="boton3">Cerrar</button>
+          </form>
+        </dialog>
+      </section>
+    </div>
+  );
+
+
 }
 
 
