@@ -48,7 +48,7 @@ header nav{
   font-weight: 500;
  }
 
- /*estilo para la seccion de compras en texto, imagen, parrafos y botones*/
+ /*estilo para la seccion de compras y ventas en texto, imagen, parrafos y botones*/
 .container {
   display: flex;
   flex-direction: row-reverse;
@@ -109,4 +109,96 @@ header nav{
   color: #fff;
 }
 
+/* Estilos para la sección de compras y ventas en texto, imagen, párrafos y botones */
+.ventas {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
+.ventas section {
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.ventas div {
+  list-style-type: none;
+  width: 100%;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.ventas img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.ventas h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+}
+
+.ventas p {
+  font-size: 16px;
+  color: #666;
+  padding: 10px;
+}
+
+.ventas button {
+  font-size: 16px;
+  background-color: #949494;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+.ventas button:hover {
+  background-color: #0069d9;
+}
+
+.ventas button:active {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+/* Media Query para tablets */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h2 {
+    position: relative;
+    left: auto;
+  }
+  header nav {
+    margin-top: 1rem;
+    right: 0;
+  }
+}
+
+/* Media Query para teléfonos */
+@media (max-width: 576px) {
+  section {
+    width: 90%;
+  }
+  .container,
+  .ventas {
+    flex-direction: column;
+  }
+  .compras,
+  .ventas section {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

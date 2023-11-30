@@ -1,10 +1,8 @@
-
-
 function Ventas() {
   return (
     <div className="ventas">
       <section>
-        <h3>Compras</h3>
+        <h3>Ventas</h3>
         <div>
           <img alt="Imagen del producto" />
           <h4>Nombre</h4>
